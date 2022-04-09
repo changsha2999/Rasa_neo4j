@@ -1,0 +1,360 @@
+version: "3.1"
+stories:
+  - story: story_1_search_treat_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_treat
+        entities:
+          - disease: "百日咳"
+      - action: action_search_treat
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_2_search_food_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_food
+        entities:
+          - disease: "百日咳"
+      - action: action_search_food
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_3_search_symptom_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_symptom
+        entities:
+          - disease: "百日咳"
+      - action: action_search_symptom
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_4_search_cause_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_cause
+        entities:
+          - disease: "百日咳"
+      - action: action_search_cause
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_5_search_neopathy_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_neopathy
+        entities:
+          - disease: "百日咳"
+      - action: action_search_neopathy
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_6_search_drug_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_drug
+        entities:
+          - disease: "百日咳"
+      - action: action_search_drug
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_7_search_prevention_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_prevention
+        entities:
+          - disease: "百日咳"
+      - action: action_search_prevention
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_8_search_drug_func_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_drug_func
+        entities:
+          - disease: "百日咳"
+      - action: action_search_drug_func
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_9_search_disease_treat_time_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_disease_treat_time
+        entities:
+          - disease: "百日咳"
+      - action: action_search_disease_treat_time
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_10_search_easy_get_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_easy_get
+        entities:
+          - disease: "百日咳"
+      - action: action_search_easy_get
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_11_search_disease_dept_simple  
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_disease_dept
+        entities:
+          - disease: "百日咳"
+      - action: action_search_disease_dept
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_120  
+    steps:
+      - intent: first
+      - action: utter_greet
+
+  - story: story_12  
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: story_13  
+    steps:
+      - intent: bye
+      - action: utter_goodbye
+
+  - story: story_14  
+    steps:
+      - intent: search_treat
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_treat
+
+  - story: story_15  
+    steps:
+      - intent: search_food
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_food
+
+  - story: story_16  
+    steps:
+      - intent: search_symptom
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_symptom
+
+  - story: story_17  
+    steps:
+      - intent: search_cause
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_cause
+
+  - story: story_18  
+    steps:
+      - intent: search_neopathy
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_neopathy
+
+  - story: story_19  
+    steps:
+      - intent: search_drug
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_drug
+
+  - story: story_20  
+    steps:
+      - intent: search_prevention
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_prevention
+
+  - story: story_21  
+    steps:
+      - intent: search_drug_func
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_drug_func
+
+  - story: story_22  
+    steps:
+      - intent: search_disease_treat_time
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_disease_treat_time
+      
+  - story: story_23  
+    steps:
+      - intent: search_easy_get
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_easy_get
+
+  - story: story_24  
+    steps:
+      - intent: search_disease_dept
+        entities:
+          - disease: "过敏性皮炎"
+      - action: action_search_disease_dept
+            
+# <!-- ## story_1_search_treat_simple   
+# * greet
+#    - utter_greet
+# * search_treat{"disease": "百日咳"}
+#    - action_search_treat
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_2_search_food_simple
+# * greet
+#    - utter_greet
+# * search_food{"disease": "百日咳"}
+#    - action_search_food
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_3_search_symptom_simple
+# * greet
+#    - utter_greet
+# * search_symptom{"disease": "百日咳"}
+#    - action_search_symptom
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_4_search_cause_simple
+# * greet
+#    - utter_greet
+# * search_cause{"disease": "百日咳"}
+#    - action_search_cause
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_5_search_neopathy_simple
+# * greet
+#    - utter_greet
+# * search_neopathy{"disease": "百日咳"}
+#    - action_search_neopathy
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_6_search_drug_simple
+# * greet
+#    - utter_greet
+# * search_drug{"disease": "百日咳"}
+#    - action_search_drug
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_7_search_prevention_simple
+# * greet
+#    - utter_greet
+# * search_prevention{"disease": "百日咳"}
+#    - action_search_prevention
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_8_search_drug_func_simple
+# * greet
+#    - utter_greet
+# * search_drug_func{"drug": "头孢地尼分散片"}
+#    - action_search_drug_func
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_9_search_disease_treat_time_simple
+# * greet
+#    - utter_greet
+# * search_disease_treat_time{"disease": "百日咳"}
+#    - action_search_disease_treat_time
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_10_search_easy_get_simple
+# * greet
+#    - utter_greet
+# * search_easy_get{"disease": "百日咳"}
+#    - action_search_easy_get
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_11_search_disease_dept_simple
+# * greet
+#    - utter_greet
+# * search_disease_dept{"disease": "百日咳"}
+#    - action_search_disease_dept
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_120
+# * first
+#    - utter_greet
+#  -->
+
+# <!-- ## story_12
+# * greet
+#    - utter_greet -->
+
+# <!-- ## story_13
+# * bye
+#    - utter_goodbye -->
+
+# <!-- ## story_14
+# * search_treat{"disease": "过敏性皮炎"}
+#    - action_search_treat -->
+   
+# <!-- ## story_15
+# * search_food{"disease": "过敏性皮炎"}
+#    - action_search_food -->
+
+# <!-- ## story_16
+# * search_symptom{"disease": "过敏性皮炎"}
+#    - action_search_symptom -->
+
+# <!-- ## story_17
+# * search_cause{"disease": "过敏性皮炎"}
+#    - action_search_cause -->
+
+# <!-- ## story_18
+# * search_neopathy{"disease": "过敏性皮炎"}
+#    - action_search_neopathy -->
+   
+# <!-- ## story_19
+# * search_drug{"disease": "过敏性皮炎"}
+#    - action_search_drug -->
+   
+# <!-- ## story_20
+# * search_prevention{"disease": "过敏性皮炎"}
+#    - action_search_prevention -->
+   
+# <!-- ## story_21
+# * search_drug_func{"drug": "复方斑蝥胶囊"}
+#    - action_search_drug_func -->
+   
+# <!-- ## story_22
+# * search_disease_treat_time{"disease": "过敏性皮炎"}
+#    - action_search_disease_treat_time -->
+   
+# <!-- ## story_23
+# * search_easy_get{"disease": "过敏性皮炎"}
+#    - action_search_easy_get -->
+   
+# <!-- ## story_24
+# * search_disease_dept{"disease": "过敏性皮炎"}
+#    - action_search_disease_dept -->
+   
